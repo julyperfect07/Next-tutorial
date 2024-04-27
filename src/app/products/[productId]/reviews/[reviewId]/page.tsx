@@ -9,6 +9,10 @@ interface Params {
 }
 
 const ReviewDetail = ({ params }: Params) => {
+  // const random = 1;
+  // if (random === 1) {
+  //   throw new Error("Error loading review");
+  // }
   if (parseInt(params.reviewId) > 1000) {
     notFound();
   }
