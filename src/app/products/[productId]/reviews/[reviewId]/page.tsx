@@ -1,3 +1,5 @@
+"use client";
+
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -9,7 +11,7 @@ interface Params {
 }
 
 const ReviewDetail = ({ params }: Params) => {
-  // const random = 1;
+  // const random = 0;
   // if (random === 1) {
   //   throw new Error("Error loading review");
   // }
