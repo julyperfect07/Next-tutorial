@@ -5,6 +5,7 @@ interface layoutProps {
   notification: React.ReactNode;
   revenue: React.ReactNode;
   users: React.ReactNode;
+  login: React.ReactNode;
 }
 
 function layout({
@@ -12,8 +13,10 @@ function layout({
   notification,
   revenue,
   users,
+  login,
 }: layoutProps) {
-  return (
+  const isLoggedIn = false;
+  return isLoggedIn ? (
     <div>
       <div>{children}</div>
       <div style={{ display: "flex" }}>
@@ -26,6 +29,8 @@ function layout({
         </div>
       </div>
     </div>
+  ) : (
+    login
   );
 }
 
